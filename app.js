@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 require('dotenv').config();
-console.log("hi")
 const { validateTodoBody, validateTodoId, validateUpdateBody } = require("./middlewares/validationMiddleware")
 const { requestLogger, responseLogger } = require('./middlewares/loggingMiddleware');
 app.use(express.json());
