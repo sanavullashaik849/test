@@ -9,6 +9,7 @@ app.use(morgan('dev'))
 const port = process.env.PORT || 3000;
 
 app.use(requestLogger);
+console.log("hi")
 
 const todos = [
     { "id": 1, "task": "Complete backend API for user authentication", "status": false },
